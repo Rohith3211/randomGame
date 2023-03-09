@@ -6,7 +6,7 @@ import './index.css'
 
 const NavBar = props => {
   const {details} = props
-  const {score, topScore} = details
+  const {score, topScore, there} = details
 
   return (
     <nav className="nav-card back">
@@ -18,10 +18,12 @@ const NavBar = props => {
         />
         <h1 className="emoji">Emoji Game</h1>
       </div>
-      <div className="score-card">
-        <p>Score: {score}</p>
-        <p>Top Score: {topScore}</p>
-      </div>
+
+      {there ? null : (
+        <div className="score-card">
+          <p>Score: {score}</p> <p>Top Score: {topScore}</p>{' '}
+        </div>
+      )}
     </nav>
   )
 }

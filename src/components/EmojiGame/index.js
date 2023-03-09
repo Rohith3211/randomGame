@@ -34,7 +34,7 @@ class EmojiGame extends Component {
   onClickEmoji = id => {
     const {ownList, score} = this.state
 
-    if (score > 11) {
+    if (score === 12) {
       this.setState({show: false})
     }
 
@@ -54,9 +54,12 @@ class EmojiGame extends Component {
       ownList: unqId,
       there: !there,
       score: 0,
-      topScore: score,
       show: true,
     })
+
+    if (score > topScore) {
+      this.setState({topScore: score})
+    }
   }
 
   render() {
