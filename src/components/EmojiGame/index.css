@@ -1,0 +1,12 @@
+/* Write your code here. */
+.card {
+  background-image: linear-gradient(to right, #9796f0, #fbc7d4);
+  min-height: 100vh;
+}
+.card2 {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}

@@ -1,0 +1,55 @@
+/* Write your code here. */
+.display-card {
+  background-color: #ffffff33;
+  display: flex;
+  padding: 35px;
+  align-items: center;
+  border-radius: 10px;
+  margin: 20px;
+}
+.ballon-img {
+  height: 330px;
+}
+.play-btn {
+  background-color: #ffce27;
+  padding: 10px;
+  border-radius: 10px;
+  border-width: 0px;
+  font-weight: bold;
+}
+.win-lose-card {
+  text-align: center;
+}
+div .win-lose-card h1 {
+  color: white;
+}
+.score {
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.number {
+  color: #6a59ff;
+  font-size: 25px;
+  margin-top: 0px;
+  font-weight: bold;
+}
+
+@media (max-width: 576px) {
+  .ballon-img {
+    height: 180px;
+  }
+  .play-btn {
+    width: 70px;
+    font-size: 9px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .score {
+    font-size: 15px;
+  }
+  .number {
+    font-size: 15px;
+  }
+}

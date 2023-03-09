@@ -1,0 +1,45 @@
+/* Write your code here. */
+.nav-img {
+  height: 40px;
+}
+.nav-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  background-color: #ffffff33;
+}
+.back {
+  background-image: transparent;
+}
+.score-card {
+  display: flex;
+  flex-direction: row;
+}
+div .score-card p {
+  margin-right: 30px;
+  color: rgb(93, 77, 77);
+  font-weight: 500;
+}
+.nav-icon {
+  display: flex;
+  align-items: center;
+}
+
+.emoji {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+@media (max-width: 576px) {
+  .emoji {
+    font-size: 12px;
+  }
+  div .score-card p {
+    font-size: 10px;
+  }
+  .nav-img {
+    height: 25px;
+  }
+}
